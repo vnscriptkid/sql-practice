@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: "postgres:11.6"
+    container_name: "sql-runner"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=sql-practice
+    ports:
+      - "5433:5432"
